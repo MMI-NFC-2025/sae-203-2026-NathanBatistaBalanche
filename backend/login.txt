@@ -1,0 +1,3 @@
+Login superuser :
+Email : admin@admin.com
+MDP : admin123456
