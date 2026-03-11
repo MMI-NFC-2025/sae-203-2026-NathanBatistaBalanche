@@ -11,10 +11,16 @@ import PbImage from './PbImage.astro';
     <li>
         <h4 class="font-anonymous text-xl text-black text-base truncate leading-tight mb-1 text-center">{artist.nom}</h4>
     </li>
-    <li class="text-black text-xs truncate leading-tight mb-1">{artist.description_courte}</li>
-    <li class="text-black font-bold text-sm drop-shadow-lg">{formatDate(artist.date_de_presentation)}</li>
+    <li class="font-anonymous text-black text-xs truncate leading-tight mb-1">{artist.description_courte}</li>
+    <li class="font-anonymous text-black font-bold text-sm drop-shadow-lg">{formatDate(artist.date_de_presentation)}</li>
+    <div class="flex justify-center gap-4 max-w-4xl mx-auto mb-4">
+        <p class="w-auto mx-auto bg-[#6189AD] text-black px-3 py-3 rounded-full text-center font-poppins text-xs mt-5 shadow-lg">{artist.style_de_musique[0]}</p>
+        <p class="w-auto mx-auto bg-[#6189AD] text-black px-3 py-3 rounded-full text-center font-poppins text-xs mt-5 shadow-lg">{artist.style_de_musique[1]}</p>
+        <p class="w-auto mx-auto bg-[#FDCE53] text-black px-3 py-3 rounded-full text-center font-poppins text-xs mt-5 shadow-lg">{artist.mood_musical[0]}</p>
+        <p class="w-auto mx-auto bg-[#FDCE53] text-black px-3 py-3 rounded-full text-center font-poppins text-xs mt-5 shadow-lg">{artist.mood_musical[1]}</p>
+    </div>
     <li>
-        <a href={`/artists/${artist.id}`} class="underline">
+        <a href={`/artists/${artist.id}`} class="underline font-poppins">
             Voir plus
         </a>
     </li>

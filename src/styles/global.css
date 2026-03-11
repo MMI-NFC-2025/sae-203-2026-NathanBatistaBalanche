@@ -8,6 +8,10 @@
   font-family: 'Anonymous Pro';
   src: url('/fonts/AnonymousPro-Regular.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+}
 
 /* Puis Tailwind */
 @tailwind base;
@@ -20,4 +24,7 @@
 }
 .font-anonymous {
   font-family: 'Anonymous Pro', cursive !important;
+}
+.font-poppins {
+  font-family: 'Poppins', cursive !important;
 }
