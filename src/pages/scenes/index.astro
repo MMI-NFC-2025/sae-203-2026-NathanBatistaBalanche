@@ -1,5 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import CardScene from '../../components/CardScene.astro';
+import {getScenes} from '../../script/backend.mjs'
+
+let scenes = await getScenes();
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -7,4 +11,11 @@ import Layout from '../../layouts/Layout.astro';
 
 <Layout titre="Jumelages - Scènes">
 	<h1 class="font-barrio text-9xl text-center mt-10 mb-10">scenes</h1>
+	<div class="grid grid-cols-4 gap-12 py-8 px-6 mx-auto">
+        {scenes.map(scene => (
+            <div class="artist">
+                <CardScene scene={scene} />
+            </div>
+        ))}
+    </div>
 </Layout>

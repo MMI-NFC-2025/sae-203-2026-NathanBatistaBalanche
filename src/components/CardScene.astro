@@ -1,0 +1,19 @@
+---
+const { scene } = Astro.props;
+import PbImage from './PbImage.astro';
+---
+
+<ul class="max-width-[1500px] bg-[#FB6E6E] rounded-lg p-3 shadow-2xl shadow-red-500/10 hover:shadow-[#FDCE53]/25 group relative transition-all duration-300 hover:-translate-y-1 overflow-hidden flex flex-col space-y-1 text-xs font-medium">
+    <li class="flex-1 flex items-center justify-center mb-4">
+        <PbImage record={scene} recordImage={scene.photo} />
+   </li>
+    <li>
+        <h4 class="font-anonymous text-xl text-black text-base truncate leading-tight mb-1 text-center">{scene.nom}</h4>
+    </li>
+    <li class="font-anonymous text-black text-xs truncate leading-tight mb-1">{scene.description}</li>
+    <li>
+        <a href={`/scenes/${scene.id}`} class="underline font-poppins">
+            Voir plus
+        </a>
+    </li>
+</ul>

@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import {getOneArtiste} from '../../script/backend.mjs'
+import CardArtist from '../../components/CardArtist.astro';
+import {getOneArtiste, getArtistesBySceneId} from '../../script/backend.mjs'
 import {formatDate} from '../../script/helpers.js'
 import PbImage from '../../components/PbImage.astro';
 
@@ -21,7 +22,7 @@ const artist = await getOneArtiste(id);
         <p class="w-auto mx-auto bg-[#FDCE53] text-black px-3 py-3 rounded-full text-center font-poppins text-xl mt-5 shadow-lg">{artist.mood_musical[0]}</p>
         <p class="w-auto mx-auto bg-[#FDCE53] text-black px-3 py-3 rounded-full text-center font-poppins text-xl mt-5 shadow-lg">{artist.mood_musical[1]}</p>
     </div>
-    <h1 class="font-barrio text-3xl text-center mt-10 mb-10">gallerie d'image</h1>
+    <h3 class="font-barrio text-3xl text-center mt-10 mb-10">gallerie d'image</h1>
     <div class="grid grid-cols-3 gap-2 mx-auto max-w-4xl mb-4">
         <PbImage record={artist} recordImage={artist.gallerie[0]} />
         <PbImage record={artist} recordImage={artist.gallerie[1]} />

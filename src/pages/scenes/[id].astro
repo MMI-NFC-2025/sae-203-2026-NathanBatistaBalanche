@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CardArtist from '../../components/CardArtist.astro';
+import {getOneScene, getArtistesBySceneId} from '../../script/backend.mjs'
+import PbImage from '../../components/PbImage.astro';
+
+const { id } = Astro.params;
+const scene = await getOneScene(id);
+let scenes = await getArtistesBySceneId(id); 
+
+---
+
+<Layout titre={"Jumelages - " + scene.nom}>
+	<h1 class="font-barrio text-6xl text-center mt-10 mb-10">{scene.nom}</h1>
+    <div class="flex justify-center">
+        <PbImage class="mx-auto" record={scene} recordImage={scene.photo} />
+    </div>
+    <p class="text-center font-poppins text-xl mt-5">{scene.description}</p>
+    <h3 class="font-barrio text-3xl text-center mt-10 mb-5">artistes qui jouent sur la scène</h1>
+    <div class="grid grid-cols-4 gap-12 py-8 px-6 mx-auto">
+        {scenes.map(scene => (
+            <div class="scene">
+                <CardArtist artist={scene} />
+            </div>
+        ))}
+    </div>
+</Layout>
