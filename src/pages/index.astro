@@ -5,6 +5,55 @@ import Layout from '../layouts/Layout.astro';
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout titre="Jumelages - Accueil">
-	<h1 class="font-barrio text-9xl text-center mt-10 mb-10">accueil</h1>
+<Layout titre="Jumelages">
+	<h1 class="font-barrio text-9xl text-center mt-10 mb-[-200px]">Festival</h1>
+	<div class="grid grid-cols-3 mb-10 mx-auto">
+		<img class="w-80 h-auto" src="/img/homepage/guitare.webp" alt="Image d'une guitare">
+		<img class="w-80 h-auto" src="/img/homepage/stars.webp" alt="Image d'étoiles">
+		<img class="w-80 h-auto" src="/img/homepage/photo.webp" alt="Image d'un appareil photo">
+	</div>
+	<a href="/festival/">
+		<div class="flex items-center gap-10 bg-white px-8 py-4 rounded-xl shadow-lg border border-white/50 max-w-max mx-auto backdrop-blur-sm mb-5">
+			<img src="/icons/calender_icon.svg" alt="Icon de calendrier" class="w-10 h-auto flex-shrink-0">
+			<p class="font-poppins font-medium text-3xl -mb-1 whitespace-nowrap">Fin Août 2026</p>
+		</div>
+	</a>
+	<a href="/scenes/">
+		<div class="flex items-center gap-10 bg-white px-8 py-4 rounded-xl shadow-lg border border-white/50 max-w-max mx-auto backdrop-blur-sm mb-5">
+			<img src="/icons/pin_icon.svg" alt="Icon de localisation" class="w-10 h-auto flex-shrink-0">
+			<p class="font-poppins font-medium text-3xl -mb-1 whitespace-nowrap">Parc du Près-la-Rose, Montbéliard</p>
+		</div>
+	</a>
+	<a href="/information/">
+		<div class="flex items-center gap-10 bg-[#FDCE53] px-8 py-4 rounded-xl shadow-lg border border-white/50 max-w-max mx-auto backdrop-blur-sm mb-5">
+			<img src="/icons/ticket_icon.svg" alt="Icon de Billet" class="w-10 h-auto flex-shrink-0">
+			<p class="font-poppins font-medium text-3xl -mb-1 whitespace-nowrap">Billeterie</p>
+		</div>
+	</a>
+	<h2 class="bg-[#FB6E6E] font-anonymous text-3xl text-center pt-5 pb-5 mb-5">Musique régionale | Folk</h2>
+    <div class="grid grid-cols-3 gap-10 mx-auto max-w-4xl mb-4">
+		<a href="/programmation/">
+			<div>
+				<img src="/img/homepage/concert.webp" alt="Image d'un concert" class="w-[272px] aspect-square object-cover">
+				<p class="bg-white font-anonymous text-3xl text-center pt-5 pb-5">Programme</p>
+			</div>
+		</a>
+		<a href="/artists/">
+			<div>
+				<img src="/img/homepage/guitarist.webp" alt="Image d'une guitare" class="w-[272px] aspect-square object-cover">
+				<p class="bg-white font-anonymous text-3xl text-center pt-5 pb-5">Invités</p>
+			</div>
+		</a>
+		<a href="/information/">
+			<div>
+				<img src="/img/homepage/redbridge.webp" alt="Image d'un pont rouge" class="w-[272px] aspect-square object-cover">
+				<p class="bg-white font-anonymous text-3xl text-center pt-5 pb-5">Infos pratiques</p>
+			</div>
+		</a>
+    </div>
+  	<h2 class="bg-[#FB6E6E] font-anonymous text-3xl text-center pt-5 pb-5 mb-10">Partenaires</h2>
+    <div class="grid grid-cols-2 gap-10 flex items-center mx-auto max-w-4xl mb-4">
+		<img src="/img/homepage/logo_montbéliard.webp">
+		<img src="/img/homepage/logo_bourgogne-franche-comte.webp">
+	</div>
 </Layout>
