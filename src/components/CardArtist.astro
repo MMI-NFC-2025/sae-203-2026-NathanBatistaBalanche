@@ -1,0 +1,15 @@
+---
+const { artist } = Astro.props;
+console.log(artist);
+import {formatDate} from '../script/helpers.js'
+import PbImage from './PbImage.astro';
+---
+
+<ul class="bg-[#FB6E6E] border border-red-400/30 rounded-lg p-3 shadow-2xl shadow-red-500/10 hover:shadow-orange-500/25 group relative transition-all duration-500 hover:-translate-y-1 hover:scale-[1.02] overflow-hidden flex flex-col space-y-1 text-xs font-medium">
+    <li class="flex-1 flex items-center justify-center mb-4">
+        <PbImage record={artist} recordImage={artist.photo} />
+   </li>
+    <li class="text-black font-bold text-base truncate leading-tight mb-1">{artist.nom}</li>
+    <li class="text-black text-xs truncate leading-tight mb-1">{artist.description_courte}</li>
+    <li class="text-black font-bold text-sm drop-shadow-lg">{formatDate(artist.date_de_presentation)}</li>
+</ul>

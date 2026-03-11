@@ -120,3 +120,7 @@ export async function addNewArtiste(newArtiste) {
 export async function addNewScene(newScene) {
     await pb.collection('scenes').create(newScene);
 }
+
+export async function getImageUrl(record, recordImage) {
+    return pb.files.getURL(record, recordImage);
+}

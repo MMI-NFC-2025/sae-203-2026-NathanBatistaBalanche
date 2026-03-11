@@ -1,5 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import CardArtist from '../../components/CardArtist.astro';
+import {getArtistesbyDate} from '../../script/backend.mjs'
+
+let artistes = await getArtistesbyDate(); 
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -7,4 +11,11 @@ import Layout from '../../layouts/Layout.astro';
 
 <Layout titre="Jumelages - Artistes">
 	<h1 class="font-barrio text-9xl text-center mt-10 mb-10">artistes</h1>
+	<div class="grid grid-cols-4 gap-12 py-8 px-6 max-w-[1100px] mx-auto">
+        {artistes.map(artist => (
+            <div class="artist">
+                <CardArtist artist={artist} />
+            </div>
+        ))}
+    </div>
 </Layout>
