@@ -4,6 +4,10 @@
   font-family: 'Barrio';
   src: url('/fonts/Barrio-Regular.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Anonymous Pro';
+  src: url('/fonts/AnonymousPro-Regular.ttf') format('truetype');
+}
 
 /* Puis Tailwind */
 @tailwind base;
@@ -13,4 +17,7 @@
 /* Force la police */
 .font-barrio {
   font-family: 'Barrio', cursive !important;
+}
+.font-anonymous {
+  font-family: 'Anonymous Pro', cursive !important;
 }
