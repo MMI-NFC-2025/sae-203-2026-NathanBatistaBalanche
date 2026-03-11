@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'Barrio';
+  src: url('/fonts/Barrio-Regular.ttf') format('truetype');
+}
+
+/* Puis Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Force la police */
+.font-barrio {
+  font-family: 'Barrio', cursive !important;
+}

@@ -13,6 +13,19 @@ export async function getArtistesbyDate() {
     }
 }
 
+export async function getArtistesFilterdate(date) {
+    try {
+        let data = await pb.collection('artistes').getFullList({
+            filter: `date = "${date}"`,
+            sort: 'date_de_presentation',
+        });
+        return data;
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}
+
 export async function getScenes() {
     try {
         let data = await pb.collection('scenes').getFullList({
