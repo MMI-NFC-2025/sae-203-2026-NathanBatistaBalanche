@@ -117,6 +117,10 @@ export async function addNewArtiste(newArtiste) {
     await pb.collection('artistes').create(newArtiste);
 }
 
+export async function sendContactForm(formData) {
+    await pb.collection('contactform').create(formData);
+}
+
 export async function addNewScene(newScene) {
     await pb.collection('scenes').create(newScene);
 }
