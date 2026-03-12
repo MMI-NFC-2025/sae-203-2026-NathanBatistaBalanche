@@ -17,10 +17,10 @@ const artist = await getOneArtiste(id);
     <p class="text-center font-poppins text-xl mt-5">{formatDate(artist.date_de_presentation)}</p>
     <p class="mx-auto font-poppins text-center text-xl mt-5 w-[1500px]">{artist.description_longue}</p>
     <div class="flex justify-center gap-2 max-w-4xl mx-auto mb-4">
-        <p class="w-auto mx-auto bg-[#FB6E6E] text-black px-3 py-3 rounded-full text-center font-poppins text-xl mt-5 shadow-lg">{artist.style_de_musique[0]}</p>
-        <p class="w-auto mx-auto bg-[#FB6E6E] text-black px-3 py-3 rounded-full text-center font-poppins text-xl mt-5 shadow-lg">{artist.style_de_musique[1]}</p>
-        <p class="w-auto mx-auto bg-[#FDCE53] text-black px-3 py-3 rounded-full text-center font-poppins text-xl mt-5 shadow-lg">{artist.mood_musical[0]}</p>
-        <p class="w-auto mx-auto bg-[#FDCE53] text-black px-3 py-3 rounded-full text-center font-poppins text-xl mt-5 shadow-lg">{artist.mood_musical[1]}</p>
+        <p class="w-auto mx-auto bg-jum-red text-black px-3 py-3 rounded-full text-center font-poppins text-xl mt-5 shadow-lg">{artist.style_de_musique[0]}</p>
+        <p class="w-auto mx-auto bg-jum-red text-black px-3 py-3 rounded-full text-center font-poppins text-xl mt-5 shadow-lg">{artist.style_de_musique[1]}</p>
+        <p class="w-auto mx-auto bg-jum-yellow text-black px-3 py-3 rounded-full text-center font-poppins text-xl mt-5 shadow-lg">{artist.mood_musical[0]}</p>
+        <p class="w-auto mx-auto bg-jum-yellow text-black px-3 py-3 rounded-full text-center font-poppins text-xl mt-5 shadow-lg">{artist.mood_musical[1]}</p>
     </div>
     <h3 class="font-barrio text-3xl text-center mt-10 mb-10">gallerie d'image</h1>
     <div class="grid grid-cols-3 gap-2 mx-auto max-w-4xl mb-4">

@@ -13,7 +13,7 @@ if (Astro.request.method === "POST") {
 <Layout titre="Jumelages - Contact">
 	<h1 class="font-barrio text-5xl text-center mt-10">contact</h1>
 	<section class="min-h-screen bg-gradient-to-br py-12 px-4 sm:px-6 lg:px-8">
-		<div class="max-w-md mx-auto bg-[#FDCE53] rounded-2xl shadow-xl p-8 sm:p-10">
+		<div class="max-w-md mx-auto bg-jum-yellow rounded-2xl shadow-xl p-8 sm:p-10">
 
 			<div class="text-center mb-8">
 				<h2 class="font-anonymous text-3xl font-bold text-gray-900 mb-2">Nous contacter</h2>
@@ -24,63 +24,63 @@ if (Astro.request.method === "POST") {
 
 				<div>
 					<label for="nom" class="font-anonymous text-xl block text-sm font-medium text-black mb-2">
-						Nom <span class="text-[#FB6E6E]">*</span>
+						Nom <span class="text-jum-red">*</span>
 					</label>
 					<input
 						type="text"
 						id="nom"
 						name="nom"
 						required
-						class="w-full px-4 py-3 border font-poppins border-[#FB6E6E] rounded-xl"
+						class="w-full px-4 py-3 border font-poppins border-jum-red rounded-xl"
 						placeholder="Votre nom"
 					/>
 				</div>
 
 				<div>
 					<label for="mail" class="font-anonymous text-xl block text-sm font-medium text-black mb-2">
-						Email <span class="text-[#FB6E6E]">*</span>
+						Email <span class="text-jum-red">*</span>
 					</label>
 					<input
 						type="email"
 						id="mail"
 						name="mail"
 						required
-						class="w-full px-4 py-3 border font-poppins border-[#FB6E6E] rounded-xl"
+						class="w-full px-4 py-3 border font-poppins border-jum-red rounded-xl"
 						placeholder="votre@email.com"
 					/>
 				</div>
 
 				<div>
 					<label for="sujet" class="font-anonymous text-xl block text-sm font-medium text-black mb-2">
-						Sujet <span class="text-[#FB6E6E]">*</span>
+						Sujet <span class="text-jum-red">*</span>
 					</label>
 					<input
 						type="text"
 						id="sujet"
 						name="sujet"
 						required
-						class="w-full px-4 py-3 border font-poppins border-[#FB6E6E] rounded-xl"
+						class="w-full px-4 py-3 border font-poppins border-jum-red rounded-xl"
 						placeholder="Objet de votre message"
 					/>
 				</div>
 
 				<div>
 					<label for="message" class="font-anonymous text-xl block text-sm font-medium text-black mb-2">
-						Message <span class="text-[#FB6E6E]">*</span>
+						Message <span class="text-jum-red">*</span>
 					</label>
 					<textarea
 						id="message"
 						name="message"
 						rows="5"
 						required
-						class="w-full px-4 py-3 border font-poppins border-[#FB6E6E] rounded-xl"
+						class="w-full px-4 py-3 border font-poppins border-jum-red rounded-xl"
 						placeholder="Votre message..."
 					></textarea>
 				</div>
 
 				<button
 					type="submit"
-					class="w-full bg-[#FB6E6E] hover:bg-[#e65757] text-white font-semibold py-4 px-6 rounded-xl"
+					class="w-full bg-jum-red hover:bg-[#e65757] text-white font-semibold py-4 px-6 rounded-xl"
 				>
 					Envoyer le message
 				</button>
@@ -94,12 +94,12 @@ if (Astro.request.method === "POST") {
 			}
 
 			<div class="mt-6 text-xs text-gray-500 text-center">
-				<p><span class="text-[#FB6E6E] font-medium">*</span> Champs obligatoires</p>
+				<p><span class="text-jum-red font-medium">*</span> Champs obligatoires</p>
 			</div>
 
 		</div>
 	</section>
-	<h2 class="font-anonymous bg-[#FB6E6E] text-black text-2xl mt-5 mb-5 text-center mx-auto w-fit px-6 py-3">Information</h2>
+	<h2 class="font-anonymous bg-jum-red text-black text-2xl mt-5 mb-5 text-center mx-auto w-fit px-6 py-3">Information</h2>
 	<p class="mx-auto font-poppins text-center text-xl mt-5 mb-5 w-[1500px]">
 		jumelagefestival@gmail.com
 	</p>

@@ -15,7 +15,7 @@ if (Astro.request.method === "POST") {
 	<h1 class="font-barrio text-5xl text-center mt-10">Ajouter un artiste</h1>
 
 	<section class="min-h-screen bg-gradient-to-br py-12 px-4 sm:px-6 lg:px-8">
-		<div class="max-w-md mx-auto bg-[#FDCE53] rounded-2xl shadow-xl p-8 sm:p-10">
+		<div class="max-w-md mx-auto bg-jum-yellow rounded-2xl shadow-xl p-8 sm:p-10">
 
 			<div class="text-center mb-8">
 				<h2 class="font-anonymous text-3xl font-bold text-gray-900 mb-2">Nouvel artiste</h2>
@@ -27,13 +27,13 @@ if (Astro.request.method === "POST") {
 				<!-- Nom -->
 				<div>
 					<label class="font-anonymous text-xl block text-black mb-2">
-						Nom de l'artiste <span class="text-[#FB6E6E]">*</span>
+						Nom de l'artiste <span class="text-jum-red">*</span>
 					</label>
 					<input
 						type="text"
 						name="nom"
 						required
-						class="w-full px-4 py-3 border font-poppins border-[#FB6E6E] rounded-xl"
+						class="w-full px-4 py-3 border font-poppins border-jum-red rounded-xl"
 						placeholder="Nom de l'artiste"
 					/>
 				</div>
@@ -46,7 +46,7 @@ if (Astro.request.method === "POST") {
 					<textarea
 						name="description_courte"
 						rows="2"
-						class="w-full px-4 py-3 border font-poppins border-[#FB6E6E] rounded-xl"
+						class="w-full px-4 py-3 border font-poppins border-jum-red rounded-xl"
 						placeholder="Description courte"
 					></textarea>
 				</div>
@@ -59,7 +59,7 @@ if (Astro.request.method === "POST") {
 					<textarea
 						name="description_longue"
 						rows="4"
-						class="w-full px-4 py-3 border font-poppins border-[#FB6E6E] rounded-xl"
+						class="w-full px-4 py-3 border font-poppins border-jum-red rounded-xl"
 						placeholder="Description longue"
 					></textarea>
 				</div>
@@ -134,7 +134,7 @@ if (Astro.request.method === "POST") {
 
 				<button
 					type="submit"
-					class="w-full bg-[#FB6E6E] hover:bg-[#e65757] text-white font-semibold py-4 px-6 rounded-xl"
+					class="w-full bg-jum-red hover:bg-[#e65757] text-white font-semibold py-4 px-6 rounded-xl"
 				>
 					Ajouter l'artiste
 				</button>

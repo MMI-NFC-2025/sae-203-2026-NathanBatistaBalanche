@@ -13,6 +13,12 @@
   src: url('/fonts/Poppins-Regular.ttf') format('truetype');
 }
 
+@theme {
+  --color-jum-yellow: oklch(0.86 0.17 95.4);
+  --color-jum-red: oklch(0.71 0.19 23.4);
+  --color-jum-blue: oklch(0.63 0.09 243.3);
+}
+
 /* Puis Tailwind */
 @tailwind base;
 @tailwind components;

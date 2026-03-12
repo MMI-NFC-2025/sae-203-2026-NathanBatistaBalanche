@@ -4,7 +4,7 @@ import {formatDate} from '../script/helpers.js'
 import PbImage from './PbImage.astro';
 ---
 
-<ul class="max-width-[1500px] bg-[#FB6E6E] rounded-lg p-3 shadow-2xl shadow-red-500/10 hover:shadow-[#FDCE53]/25 group relative transition-all duration-300 hover:-translate-y-1 overflow-hidden flex flex-col space-y-1 text-xs font-medium">
+<ul class="max-width-[1500px] bg-jum-red rounded-lg p-3 shadow-2xl shadow-red-500/10 hover:shadow-jum-yellow/25 group relative transition-all duration-300 hover:-translate-y-1 overflow-hidden flex flex-col space-y-1 text-xs font-medium">
     <li class="flex-1 flex items-center justify-center mb-4">
         <PbImage record={artist} recordImage={artist.photo} />
    </li>
@@ -14,10 +14,10 @@ import PbImage from './PbImage.astro';
     <li class="font-anonymous text-black text-xs truncate leading-tight mb-1">{artist.description_courte}</li>
     <li class="font-anonymous text-black font-bold text-sm drop-shadow-lg">{formatDate(artist.date_de_presentation)}</li>
     <div class="flex justify-center gap-4 max-w-4xl mx-auto mb-4">
-        <p class="w-auto mx-auto bg-[#6189AD] text-black px-3 py-3 rounded-full text-center font-poppins text-xs mt-5 shadow-lg">{artist.style_de_musique[0]}</p>
-        <p class="w-auto mx-auto bg-[#6189AD] text-black px-3 py-3 rounded-full text-center font-poppins text-xs mt-5 shadow-lg">{artist.style_de_musique[1]}</p>
-        <p class="w-auto mx-auto bg-[#FDCE53] text-black px-3 py-3 rounded-full text-center font-poppins text-xs mt-5 shadow-lg">{artist.mood_musical[0]}</p>
-        <p class="w-auto mx-auto bg-[#FDCE53] text-black px-3 py-3 rounded-full text-center font-poppins text-xs mt-5 shadow-lg">{artist.mood_musical[1]}</p>
+        <p class="w-auto mx-auto bg-jum-blue text-black px-3 py-3 rounded-full text-center font-poppins text-xs mt-5 shadow-lg">{artist.style_de_musique[0]}</p>
+        <p class="w-auto mx-auto bg-jum-blue text-black px-3 py-3 rounded-full text-center font-poppins text-xs mt-5 shadow-lg">{artist.style_de_musique[1]}</p>
+        <p class="w-auto mx-auto bg-jum-yellow text-black px-3 py-3 rounded-full text-center font-poppins text-xs mt-5 shadow-lg">{artist.mood_musical[0]}</p>
+        <p class="w-auto mx-auto bg-jum-yellow text-black px-3 py-3 rounded-full text-center font-poppins text-xs mt-5 shadow-lg">{artist.mood_musical[1]}</p>
     </div>
     <li>
         <a href={`/artists/${artist.id}`} class="underline font-poppins">
